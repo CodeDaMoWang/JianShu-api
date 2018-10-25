@@ -1,9 +1,9 @@
 package com.example.jianshuapi.service.impl;
 
 import com.soft1611.jianshu.core.AbstractService;
-import com.soft1611.jianshu.dao.SysUserMapper;
-import com.soft1611.jianshu.model.SysUser;
-import com.soft1611.jianshu.service.SysUserService;
+import com.soft1611.jianshu.dao.CarouselMapper;
+import com.soft1611.jianshu.model.Carousel;
+import com.soft1611.jianshu.service.CarouselService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,8 +15,8 @@ import javax.annotation.Resource;
  */
 @Service
 @Transactional
-public class SysUserServiceImpl extends AbstractService<SysUser> implements SysUserService {
+public class CarouselServiceImpl extends AbstractService<Carousel> implements CarouselService {
     @Resource
-    private SysUserMapper sysUserMapper;
+    private CarouselMapper carouselMapper;
 
 }

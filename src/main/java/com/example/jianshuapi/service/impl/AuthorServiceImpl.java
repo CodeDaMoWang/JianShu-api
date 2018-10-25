@@ -1,9 +1,9 @@
 package com.example.jianshuapi.service.impl;
 
 import com.soft1611.jianshu.core.AbstractService;
-import com.soft1611.jianshu.dao.SysUserMapper;
-import com.soft1611.jianshu.model.SysUser;
-import com.soft1611.jianshu.service.SysUserService;
+import com.soft1611.jianshu.dao.AuthorMapper;
+import com.soft1611.jianshu.model.Author;
+import com.soft1611.jianshu.service.AuthorService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,8 +15,8 @@ import javax.annotation.Resource;
  */
 @Service
 @Transactional
-public class SysUserServiceImpl extends AbstractService<SysUser> implements SysUserService {
+public class AuthorServiceImpl extends AbstractService<Author> implements AuthorService {
     @Resource
-    private SysUserMapper sysUserMapper;
+    private AuthorMapper authorMapper;
 
 }
